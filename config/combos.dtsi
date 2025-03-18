@@ -1,0 +1,36 @@
+compatible = "zmk,combos";
+combo_esc {
+    timeout-ms = <50>;
+    key-positions = <0 1>;
+    bindings = <&kp ESC>;
+};
+combo_obrack {
+    timeout-ms = <50>;
+    key-positions = <11 12>;
+    bindings = <&kp RA(SE_N8)>;
+};
+combo_obrace {
+    timeout-ms = <50>;
+    key-positions = <12 13>;
+    bindings = <&kp LS(RA(SE_N8))>;
+};
+combo_cbrace {
+    timeout-ms = <50>;
+    key-positions = <16 17>;
+    bindings = <&kp LS(RA(SE_N9))>;
+};
+combo_cbrack {
+    timeout-ms = <50>;
+    key-positions = <17 18>;
+    bindings = <&kp RA(SE_N9)>;
+};
+combo_lcolon {
+    timeout-ms = <50>;
+    key-positions = <11 13>;
+    bindings = <&kp LS(SE_DOT)>;
+};
+combo_rcolon {
+    timeout-ms = <50>;
+    key-positions = <16 18>;
+    bindings = <&kp LS(SE_DOT)>;
+};

@@ -1,0 +1,15 @@
+/* Macro macro: */
+#define str(s) #s
+#define MACRO(NAME, BINDINGS) \
+  macro_##NAME: macro_##NAME { \
+      compatible = "zmk,behavior-macro"; \
+      label = str(macro_##NAME); \
+      #binding-cells = <0>; \
+      wait-ms = <30>; \
+      tap-ms = <40>; \
+      bindings = <BINDINGS>; \
+  };
+
+MACRO(BRCE, <&kp LS(RA(SE_N8))> <&kp LS(RA(SE_N9))> <&kp ESC> <&kp I>)
+MACRO(PAR, <&kp LS(SE_N8)> <&kp LS(SE_N9)> <&kp ESC> <&kp I>)
+MACRO(BRCK, <&kp RA(SE_N8)> <&kp RA(SE_N9)> <&kp ESC> <&kp I>)
