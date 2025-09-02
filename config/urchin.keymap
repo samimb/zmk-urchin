@@ -142,10 +142,10 @@
     hammerspoon_layer {
       label = "HS";
       bindings = <
-	  &kp APK(Q) &kp APK(W) &kp APK(E) &kp APK(R) &kp APK(T)         &kp APK(Y)    &kp APK(U) &kp APK(I) &kp APK(O)     &kp APK(P)
-	  &kp APK(A) &kp APK(S) &kp APK(D) &kp APK(F) &kp APK(G)         &kp APK(H)    &kp APK(J) &kp APK(K) &kp APK(L)     &tog DEF
-	  &kp APK(Z) &kp APK(X) &kp APK(C) &kp APK(V) &kp APK(B)         &kp APK(LEFT) &kp APK(M) &trans     &kp APK(RIGHT) &trans
-	                                   &trans     &trans         .   &trans        &trans
+	  &kp APK(Q) &kp APK(W) &kp APK(E) &kp APK(R)  &kp APK(T)        &kp APK(Y)    &kp APK(U) &kp APK(I) &kp APK(O)     &kp APK(P)
+	  &kp APK(A) &kp APK(S) &kp APK(D) &kp APK(F)  &kp APK(G)        &kp APK(H)    &kp APK(J) &kp APK(K) &kp APK(L)     &tog DEF
+	  &kp APK(Z) &kp APK(X) &kp APK(C) &kp APK(V)  &kp APK(B)        &kp APK(LEFT) &kp APK(M) &trans     &kp APK(RIGHT) &trans
+	                                   &lt LOW ESC &lt HS BSPC       &kp RET       &moto RSE 0
 	>;
     };
 
