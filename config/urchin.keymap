@@ -9,8 +9,8 @@
 #define RSE 2
 #define ADJ 3
 #define HS  4
-#define GM  5
-#define COL 6
+// #define GM  5
+// #define COL 6
 
 #define APK(X) RS(RG(RC(X))) 
 
@@ -125,14 +125,14 @@
 	  &kp C_VOL_UP        &kp C_BRI_UP      &kp C_PREV       &kp C_PP          &kp UNDER            &kp LS(SE_N1) &kp LS(SE_N2)      &kp LS(SE_N3)       &kp LS(SE_N4)      &qq2                 
 	  &hm LSHIFT C_VOL_DN &hm LALT C_BRI_DN &hm LCTRL C_NEXT &hm LGUI SE_TILDE &kp BSLH             &kp LS(SE_N6) &hm RGUI LS(SE_N7) &hm RCTRL LS(SE_N8) &hm RALT LS(SE_N9) &hm RSHIFT LS(SE_N0) 
 	  &kp LS(SE_STAR)     &kp TAB           &kp LBRC         &kp RBRC          &kp RA(SE_N7)        &kp LEFT      &kp DOWN           &kp UP              &kp RIGHT          &kp LS(BSLH)         
-                                                                 &mo ADJ           &kp DEL              &kp RET       &kp SPACE
+                                                           &mo ADJ           &kp DEL              &kp RET       &kp SPACE
 	>;
     };
     
     adjust_layer {
       label = "ADJ";
       bindings = <
-          &trans       &trans       &trans        &trans       &trans             &kp F1  &kp F2  &kp F3  &kp F4  &kp F5   
+    &trans       &trans       &trans        &trans       &trans             &kp F1  &kp F2  &kp F3  &kp F4  &kp F5   
 	  &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2  &bt BT_SEL 3 &bt BT_SEL 4       &kp F6  &kp F6  &kp F7  &kp F8  &kp F9   
 	  &trans       &trans       &bt BT_CLR    &trans       &trans             &kp F9  &kp F10 &kp F11 &kp F12 &kp CAPS 
 	                                          &trans       &kp DEL            &kp RET &kp SPACE
@@ -144,29 +144,29 @@
       bindings = <
 	  &kp APK(Q) &kp APK(W) &kp APK(E) &kp APK(R) &kp APK(T)         &kp APK(Y)    &kp APK(U) &kp APK(I) &kp APK(O)     &kp APK(P)
 	  &kp APK(A) &kp APK(S) &kp APK(D) &kp APK(F) &kp APK(G)         &kp APK(H)    &kp APK(J) &kp APK(K) &kp APK(L)     &tog DEF
-	  &kp APK(Z) &kp APK(X) &kp APK(C) &kp APK(V) &kp APK(B)         &kp APK(LEFT) &kp APK(M) &trans     &kp APK(RIGHT) &tog COL
-	                        &trans     &trans     &trans             &trans        &trans     &tog GM
+	  &kp APK(Z) &kp APK(X) &kp APK(C) &kp APK(V) &kp APK(B)         &kp APK(LEFT) &kp APK(M) &trans     &kp APK(RIGHT) &trans
+	                                   &trans     &trans         .   &trans        &trans
 	>;
     };
 
-    gaming_layer {
-      label = "GM";
-      bindings = <
-	  &kp Q &kp W &kp E &kp R       &kp T          &kp Y   &kp U &kp I        &kp O      &kp P           
-	  &kp A &kp S &kp D &kp F       &kp G          &kp H   &kp J &kp K        &kp L      &kp BSLH 
-	  &kp Z &kp X &kp C &kp V       &kp B          &kp N   &kp M &kp SE_COMMA &kp SE_DOT &kp SE_MINUS    
-	                    &lt LOW ESC &lt HS BSPC    &kp RET &moto RSE 0
-	>;
-    };
-
-    colmak_layer {
-      label = "COL";
-      bindings = <
-	  &kp Q        &kp W      &kp F         &kp P       &kp G             &kp J        &kp L      &kp U        &kp Y      &kp BSLH           
-	  &hm LSHIFT A &hm LALT R &hm LCTRL S   &hm LGUI T  &kp D             &kp H        &hm RGUI N &hm RCTRL E  &hm RALT I &hm RSHIFT O 
-	  &kp Z        &kp X      &kp C         &kp V       &kp B             &kp K        &kp M      &kp SE_COMMA &kp SE_DOT &kp SE_MINUS    
-	                                        &lt LOW ESC &lt HS BSPC       &kp RET      &moto RSE 0
-	>;
-    };
+ //    gaming_layer {
+ //      label = "GM";
+ //      bindings = <
+	//   &kp Q &kp W &kp E &kp R       &kp T          &kp Y   &kp U &kp I        &kp O      &kp P           
+	//   &kp A &kp S &kp D &kp F       &kp G          &kp H   &kp J &kp K        &kp L      &kp BSLH 
+	//   &kp Z &kp X &kp C &kp V       &kp B          &kp N   &kp M &kp SE_COMMA &kp SE_DOT &kp SE_MINUS    
+	//                     &lt LOW ESC &lt HS BSPC    &kp RET &moto RSE 0
+	// >;
+ //    };
+	//
+ //    colmak_layer {
+ //      label = "COL";
+ //      bindings = <
+	//   &kp Q        &kp W      &kp F         &kp P       &kp G             &kp J        &kp L      &kp U        &kp Y      &kp BSLH           
+	//   &hm LSHIFT A &hm LALT R &hm LCTRL S   &hm LGUI T  &kp D             &kp H        &hm RGUI N &hm RCTRL E  &hm RALT I &hm RSHIFT O 
+	//   &kp Z        &kp X      &kp C         &kp V       &kp B             &kp K        &kp M      &kp SE_COMMA &kp SE_DOT &kp SE_MINUS    
+	//                                         &lt LOW ESC &lt HS BSPC       &kp RET      &moto RSE 0
+	// >;
+ //    };
   };
 };
