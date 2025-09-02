@@ -112,7 +112,7 @@
     lower_layer {
       label = "LOW";
       bindings = <
-	  &kp SE_N1         &kp SE_N2      &kp SE_N3       &kp SE_N4      &kp SE_N5           &kp LBKT           &kp RBKT          &kp EQUAL         &kp SE_PLUS   &qq1           
+	  &kp SE_N1         &kp SE_N2      &kp SE_N3       &kp SE_N4      &kp SE_N5           &kp SE_TILDE       &kp RBKT          &kp EQUAL         &kp SE_PLUS   &qq1           
 	  &hm LSHIFT SE_N6  &hm LALT SE_N7 &hm LCTRL SE_N8 &hm LGUI SE_N9 &kp SE_N0           &kp RA(SE_N7)      &hm RGUI LS(RBKT) &hm RCTRL SE_PIPE &hm RALT SEMI &hm RSHIFT SQT 
 	  &kp LS(RG(SE_N4)) &kp TAB        &parens         &braces        &brackets           &kp RA(LS(SE_N7))  &kp SE_GRAVE      &kp SE_TILDE      &kp SE_PIPE   &kp TILDE      
 	                                                   &trans         &kp DEL             &kp RET            &lt ADJ SPACE
