@@ -1,3 +1,4 @@
 #define TAP_TERM 200
+#define TAP_TERM_HM 280
 #define QUICK_TAP_TERM 150
 #define COMBO_TIMEOUT 100

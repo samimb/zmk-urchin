@@ -36,7 +36,7 @@
       compatible = "zmk,behavior-macro";
       label = "TOGGLE_GAMING_SAFE";
       #binding-cells = <0>;
-      bindings = <&tog GM>, <&tog DEF>;
+      bindings = <&tog GM>;
     };
     hm: homerow_mods {
       compatible = "zmk,behavior-hold-tap";
@@ -97,7 +97,7 @@
       compatible = "zmk,behavior-hold-tap";
       #binding-cells = <2>;
       flavor = "tap-preferred";
-      tapping-term-ms = <QUICK_TAP_TERM>;
+      tapping-term-ms = <TAP_TERM>;
       bindings = <&mo>, <&apl>;
     };
   };
